@@ -1,0 +1,10 @@
+gcc -std=c99 -O2 -fopenmp bucket_sort.c
+srun --partition=cpar ./a.out
+
+srun --partition=day --nodelist=compute-134-115 cat /proc/cpuinfo -escolhe no
+srun --partition=cpar papi_mem_info compute-134-115
+srun --partition=day --nodelist=compute-134-115 ./sort
+pbsnodes -todos os nos
+
+-I/share/apps/papi/5.4.1/include
+LIBS = -L/share/apps/papi/5.4.1/lib -lm -lpapi
