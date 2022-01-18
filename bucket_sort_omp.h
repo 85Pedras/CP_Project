@@ -1,8 +1,3 @@
-/*#define BUCKET_SIZE 10000
-#define N_BUCKETS 10
-#define ARRAY_SIZE 10000
-#define MAX 10000*/
-
 #define BUCKET_SIZE 1000
 #define N_BUCKETS 10
 #define ARRAY_SIZE 100
